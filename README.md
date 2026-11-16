@@ -1,21 +1,32 @@
 # Project Name
-
-> Replace this title with the name of your project.
+Dynamic Distortion Guitar Pedal
 
 ## Project Owner
 
-**Name:** Your Name  
-**Virginia Tech Email:** yourpid@vt.edu
+**Name:** Tamara Corvera-Andia  
+**Virginia Tech Email:** tamaracoaa@vt.edu
 
 ## Project Overview
 
-Provide a clear description of what you are building and the overall goal of the project.
+Traditional guitar distortion pedals typically use a fixed clipping configuration, meaning the amount and character of distortion remain relatively consistent regardless of how hard the guitarist plays. This project aims to develop a custom dynamic distortion pedal that responds to the intensity of the guitar signal.
 
-Include enough detail for someone unfamiliar with the project to understand what it does and why you are building it.
+The goal is to create a pedal where distortion changes based on picking intensity. Soft picking will produce a relatively clean signal, while harder picking will have more distortion. This will be accomplished using an envelope detector to measure the amplitude of the incoming guitar signal and an STM32 microcontroller to control different analog clipping configurations.
+
+The pedal will combine custom analog audio circuitry with embedded systems, featuring an OLED display for visual feedback and a custom 3D-printed enclosure.
 
 ## What I Hope to Learn
+Analog Audio Circuit Design: Understand the fundamentals of distortion pedal circuits, including gain stages, frequency filtering, and configurable clipping networks.
 
-Describe the technical skills, concepts, or experience you hope to gain from completing this project.
+Clipping Characteristics: Experiment with different clipping components and configurations, such as silicon diodes, germanium diodes, and LEDs, to understand their effects on distortion and harmonic content.
+
+Signal Conditioning: Design an envelope detector to extract the amplitude of an audio signal and convert it into a usable control voltage.
+
+Embedded Systems: Use an STM32 microcontroller to sample analog signals through its ADC and control external analog switching circuitry.
+
+Audio Signal Analysis: Investigate how different clipping configurations affect waveform characteristics, frequency response, and total harmonic distortion (THD).
+
+PCB and Enclosure Design: Develop a custom PCB and 3D-printed enclosure to integrate the analog circuitry, microcontroller, OLED display, and user controls.
+
 
 ## Design and Implementation
 
